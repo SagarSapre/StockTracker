@@ -16,12 +16,12 @@ url="https://www.moneycontrol.com/mutual-funds/find-fund/returns?&amc=BIRMUTF,AX
 # %%
 def send_request():
     r = requests.get(url)
-    return r
+    return r,r.status_code
 
 r=send_request()
 
 # %%
-soup = BeautifulSoup(r.text, "html.parser")
+soup = BeautifulSoup(r[0].text, "html.parser")
 dom = etree.HTML(str(soup))
 firstfund=dom.xpath('//*[@id="dataTableId"]/tbody/tr[1]/td[1]/a')
 firstfundlink=dom.xpath('//*[@id="dataTableId"]/tbody/tr[1]/td[1]/a/@href')
