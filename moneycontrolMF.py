@@ -63,7 +63,7 @@ with requests.Session() as s:
         category = "not Found"
         error_type = "category not Found"
         #    errordf.loc[len(errordf.index)] = [url, row, error_type, error_message]
-   # print(category)
+    # print(category)
     # AMC
     try:
         AMC = soup.find_all("span", class_="sub_category_text")[1].text
@@ -241,7 +241,7 @@ with requests.Session() as s:
 
     print("printing df")
     #errordf.to_excel('NAVerror.xlsx')
-    df.to_excel('NAVPAGEDATA2.xlsx')
+    df.to_excel('NAVPAGEDATA.xlsx')
 
 url3 = soup('div', class_='forbgmax clearfix')[0]('li', class_="main_sticky_menu")[4]('a')[0].get('href')
 
