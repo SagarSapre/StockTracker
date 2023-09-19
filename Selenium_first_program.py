@@ -13,7 +13,7 @@ dropd = driver.find_element(By.XPATH,'//*[@id="PSYear"]').click()
 time.sleep(1)
 ##click on 2023
 dropd = driver.find_element(By.XPATH,'//*[@id="PSYear"]/div[2]/div[2]').click()
-##for 2022
+##for 2022 xpath is as follows
 #//*[@id="PSYear"]/div[2]/div[3]
 
 time.sleep(1)
