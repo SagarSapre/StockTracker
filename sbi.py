@@ -40,7 +40,8 @@ for items in selectdnld:
 urldict=dict(zip(monthtext,urllist))
 with open("sbi.json", "w") as outfile:
     json.dump(urldict, outfile)
-print ("printing urldict" +'/n')
+print ("printing urldict")
+print()
 #print(urldict)
 #print(selectdnld)
 '''
