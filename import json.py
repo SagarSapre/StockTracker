@@ -1,9 +1,5 @@
 
-import json
-import os
-import requests
-from requests import get
-
+# this file download and save as xlsx based on json file contents
 #%%
 import time
 import json

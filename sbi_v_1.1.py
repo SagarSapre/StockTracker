@@ -5,6 +5,8 @@ from requests import get
 import json
 import datetime
 
+#this file creates a json object with keys and values of scheme name and download url
+
 driver = webdriver.Chrome()
 r=driver.get("https://www.sbimf.com/portfolios")
 time.sleep(3)
