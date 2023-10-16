@@ -6,7 +6,7 @@ import json
 import os
 import requests
 from requests import get
-with open('sbi2.json', 'r') as f:
+with open(r'C:\Users\Ryzen\python\StockTracker\txt\sbi2.json', 'r') as f:
         data = json.load(f)
 #%%
 file_path='E:\\sagar\\2 sagar ORDER\\ORDER\\Prgramming\\python\\projects\\stocktracker\\mutual fund data\\sbi\\'
