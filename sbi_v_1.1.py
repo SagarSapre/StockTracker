@@ -58,22 +58,21 @@ for x in range(2,noofyears):
         time.sleep(3)
         #selected year = //*[@id="PSYear"]/div[1]
         #selected Month =//*[@id="PSMonth"]/div[1]
-        year=driver.find_element(By.XPATH,'//*[@id="PSYear"]/div[1]').text
-        month=driver.find_element(By.XPATH,'//*[@id="PSMonth"]/div[1]').text
+        year=driver.find_element(By.XPATH,'//*[@id="divRemunaration"]/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/button/span[1]').text
+        month=driver.find_element(By.XPATH,'//*[@id="divRemunaration"]/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/button/span[1]').text
         print()
         print(year,"-",month)
         print()
         ##new attaempt to add all links to dictionary
-        dropd = driver.find_elements(By.XPATH,'//*[@id="tblPortfoliosheets"]/tr/td[1]/a')
-        for items in dropd:
-            xlurl=items.get_attribute("href")
-            xlname=items.get_attribute("text")
-            myTuple = (str(year),'-',month,'-',xlname)
-            keys=''.join(myTuple)
-            Keyslist.append(keys)
-            valuelist.append(xlurl)
+        dropd = driver.find_elements(By.XPATH,'/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/p[1]/a[1]')
+        xlurl=dropd.get_attribute("href")
+        xlname=dropd.get_attribute("text")
+        myTuple = (str(year),'-',month,'-',xlname)
+        keys=''.join(myTuple)
+        Keyslist.append(keys)
+        valuelist.append(xlurl)
 
-            
+
 
 driver.close()
 '''
@@ -84,7 +83,7 @@ for items in selectdnld:
     monthtext.append(items.get_attribute("text").split("- ")[1])
 '''
 z=dict(zip(Keyslist,valuelist))
-with open("sbi2.json", "w") as outfile:
+with open("icici.json", "w") as outfile:
     json.dump(z,outfile)
 print ("printing urldict")
 print()
