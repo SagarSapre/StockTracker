@@ -5,8 +5,8 @@ from datetime import datetime
 #this files import xl file into panda and saves it in modified form
 
 # %%
-#path = r'E:\sagar\2 sagar ORDER\ORDER\Prgramming\python\projects\stocktracker\mutual fund data\sbi\2021-January-SBI EQUITY HYBRID FUND PORTFOLIO.xlsx'
-path = r'E:\sagar\2 sagar ORDER\ORDER\Prgramming\python\projects\stocktracker\mutual fund data\sbi\2017-April-Equity and Debt Open-Ended and Close Ended Scheme Portfolios - As on 30 April 2017.xlsx'
+path = r'E:\sagar\2 sagar ORDER\ORDER\Prgramming\python\projects\stocktracker\mutual fund data\sbi\2021-January-SBI EQUITY HYBRID FUND PORTFOLIO.xlsx'
+#path = r'E:\sagar\2 sagar ORDER\ORDER\Prgramming\python\projects\stocktracker\mutual fund data\sbi\2017-April-Equity and Debt Open-Ended and Close Ended Scheme Portfolios - As on 30 April 2017.xlsx'
 #path ='E:\\sagar\\2 sagar ORDER\\ORDER\\Prgramming\\python\\projects\\stocktracker\\mutual fund data\\sbi\\2023-March-SBI Fixed Maturity Plan (FMP)- Series 57.xlsx'
 #path = 'E:\\sagar\\2 sagar ORDER\\ORDER\\Prgramming\\python\\projects\\stocktracker\\mutual fund data\\sbi\\2023-June-SBI CONTRA FUND - JUNE 2023.xlsx'
 # %%
